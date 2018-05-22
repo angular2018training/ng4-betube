@@ -1,0 +1,31 @@
+
+<!-- BEGIN .with-sidebar-layout -->
+<div class="with-sidebar-layout left">
+
+	<!-- ELEMENT PLAYLIST : LATEST PLAYLIST -->
+	<zvn-elm-playlist 
+		*ngFor="let playlistInfo of playlistsInfo"
+		totalItems="{{ playlistInfo.totalItems }}"
+		playlistID="{{ playlistInfo.playlistID }}"
+		layout="{{ playlistInfo.layoutType }}">
+	</zvn-elm-playlist>	
+		
+	<!-- WIDGET ADS : article -->
+	<div class="content-panel" zvn-widget-ads="article"></div>
+
+<!-- END .with-sidebar-layout -->
+</div>
+
+<!-- BEGIN #sidebar -->
+<aside id="sidebar" class="right">
+	<!-- WIDGET PLAYLIST -->
+	<div class="widget" zvn-widget-playlist></div>
+
+	<!-- WIDGET ADS : Sidebar-->
+	<div class="widget" zvn-widget-ads="sidebar"></div>
+
+	<!-- WIDGET FEATURED VIDEO-->
+	<div class="widget" zvn-widget-featured-video></div>
+<!-- END #sidebar -->
+</aside>
+

@@ -1,0 +1,22 @@
+<zvn-elm-loader *ngIf="items.length == 0 || playlistInfo == null"></zvn-elm-loader>
+
+<div class="content-panel" *ngIf="playlistInfo">
+
+	<!-- ELEMENT PANEL TITILE -->
+	<div class="panel-title" 
+		[zvn-elm-panel-title]="playlistInfo.title" 
+		[layout] = "layout"
+		(myLayout)="changeLayout($event)"
+	></div>
+
+	
+	<div class="panel-block video-list {{ layout }}" *ngIf="items">
+		<!-- ELEMENT VIDEO -->
+		<div class="item" *ngFor="let item of items" 
+			[zvn-elm-video]="item" show-desc="true"></div>
+		
+		<div class="clear-list-button" *ngIf="showButtonLoadMore">
+			<a (click)="loadMore()" class="back-button">Load More Videos</a>
+		</div>
+	</div>
+</div>

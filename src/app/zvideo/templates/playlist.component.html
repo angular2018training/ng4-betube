@@ -1,0 +1,23 @@
+<!-- CASE 1 -->
+<!-- <zvn-elm-playlist
+	*ngIf="playlistID"
+	totalItems="1000"
+	playlistID="{{ playlistID }}"
+	layout="{{ layoutDefault }}">
+</zvn-elm-playlist>	  -->
+
+<!-- CASE 2 -->
+<!-- <zvn-elm-playlist-pagination
+	*ngIf="playlistID"
+	totalItems="1000"
+	playlistID="{{ playlistID }}"
+	layout="{{ layoutDefault }}">
+</zvn-elm-playlist-pagination>	 --> 
+
+<!-- CASE 3 -->
+<zvn-elm-playlist-load-more
+	*ngIf="playlistID"
+	playlistID="{{ playlistID }}"
+	layout="{{ layoutDefault }}">
+</zvn-elm-playlist-load-more>		
+

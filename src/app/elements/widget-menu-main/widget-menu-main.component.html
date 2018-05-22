@@ -1,0 +1,44 @@
+<!-- BEGIN #main-menu -->
+
+<div class="search-head">
+	<form action="#">
+		<input type="text" class="ot-search-field" value="" />
+		<input type="submit" class="ot-search-button" value="Search" />
+	</form>
+</div>
+<ul class="top-menu ot-menu-add" rel="Main Menu">
+	<li><a [routerLink]="['']">Homepage<i>Homepage</i></a></li>
+	<li><a [routerLink]="['']"><span>Top Playlist<i>Top Playlist</i></span></a>
+		<ul>
+			<li><a [routerLink]="['']">Web Programming</a></li>
+			<li><a [routerLink]="['']">Mobile Programming</a></li>
+		</ul>
+	</li>
+	<li class="mega-menu-full"><a href="#"><span>Newest<i>Music Related Stuff</i></span></a>
+		<ul class="sub-menu">
+			<li>
+				<ul class="menu-blocks paragraph-row">
+					<!-- BEGIN .menu-block -->
+					<li class="menu-block column3">
+						<div class="menu-content video-list">
+							<a [routerLink]="['']" class="img-hover-effect">
+								<img src="assets/images/photos/image-2.jpg" width="16" height="9" class="aspect-px" rel="" alt="" />
+							</a>
+							<h3><a [routerLink]="['']">Buenos Aires - Inception Park</a></h3>
+							<div class="video-meta">
+								<a [routerLink]="['']"><i class="fa fa-comment"></i>283</a>
+								<a [routerLink]="['']"><i class="fa fa-eye"></i>829</a>
+								<a [routerLink]="['']"><i class="fa fa-heart"></i>95</a>
+							</div>
+						</div>
+					<!-- END .menu-block -->
+					</li>
+					
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a [routerLink]="['']">Contact Us<i>Meet Our Team</i></a></li>
+</ul>
+
+<!-- END #main-menu -->

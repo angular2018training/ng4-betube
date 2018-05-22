@@ -1,0 +1,5 @@
+<h3>Popular Videos</h3>
+<zvn-elm-loader *ngIf="items.length == 0"></zvn-elm-loader>
+<div class="widget-videos-small" *ngIf="items">
+	<div class="item" *ngFor="let item of items" [zvn-elm-video]="item"></div>	
+</div>
